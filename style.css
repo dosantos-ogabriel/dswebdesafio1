@@ -1,0 +1,36 @@
+			header {
+			  display: flex;
+			  justify-content: space-between;
+			  align-items: center;
+			  padding-top: 19px;
+			  padding-bottom: 20px;
+			}
+			header ul {
+			  display: flex;
+			  list-style-type: none;
+			}
+
+			header li {
+			  border-right: 1px solid lightgrey;
+			  padding-right: 5px;
+			  padding-left: 5px;
+			}
+
+			header li:last-child {
+			  border-right: none;
+			}
+
+
+			footer {
+			  text-align: center;
+			  padding: 10px 0;
+				bottom: 0
+			}
+
+			.corpo {
+				padding: 0 15%;
+			}
+
+			label, input, button {
+				display: block;
+			}
