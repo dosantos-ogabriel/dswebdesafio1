@@ -4,20 +4,20 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="style.css" />
+		<link rel="stylesheet" href="{{url_for('static', filename='style.css')}}" />
 		<title>Quem somos</title>
 	</head>
-	<body background="images/fundo2.png">
+	<body background="static/img/fundo2.png">
 		<div class="corpo">
 			<header>
 				<div>
-					<img src="images/logo.png" alt="unes universidade" />
+					<img src="static/img/logo.png" alt="unes universidade" />
 				</div>
 				<nav>
 					<ul>
-						<li><a href="index.html">Home</a></li>
-						<li><a href="info.html">Quem somos</a></li>
-						<li><a href="contact.html">Contato</a></li>
+						<li><a href="{{ url_for('index') }}">Home</a></li>
+						<li><a href="{{ url_for('info') }}">Quem somos</a></li>
+						<li><a href="{{ url_for('contact') }}">Contato</a></li>
 					</ul>
 				</nav>
 			</header>
